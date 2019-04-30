@@ -413,8 +413,13 @@ def main(_):
       vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
 
   input_files = []
-  for input_pattern in FLAGS.input_file.split(","):
-    input_files.extend(tf.gfile.Glob(input_pattern))
+  #for input_pattern in FLAGS.input_file.split(","):
+  #  input_files.extend(tf.gfile.Glob(input_pattern))
+  with open(FLAGS.input_file, 'r') as f:
+    files = f.readlines()
+    files = [x.strip() for x in files]
+
+  input_files.extend(files)
 
   tf.logging.info("*** Reading from input files ***")
   for input_file in input_files:
