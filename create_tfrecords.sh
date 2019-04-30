@@ -7,7 +7,7 @@
 #out="/home/maggie/tfrecords/"
 
 BERT_BASE_DIR=gs://deep_speech_bucket/multi_cased_L-12_H-768_A-12
-csv=/media/maggie/csv_files/
+csv=/home/maggie/csv_files/
 out=/home/maggie/tfrecords/
 
 echo $BERT_BASE_DIR
