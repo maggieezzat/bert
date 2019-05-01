@@ -19,5 +19,7 @@ for file in "$csv"*.csv; do
 	filename=$(basename -- "$file")
 	extension="${filename##*.}"
 	filename="${filename%.*}"
-	python3 /home/maggie/bert/create_pretraining_data.py --input_file="$file" --output_file="$out$filename".tfrecord --vocab_file=$BERT_BASE_DIR/vocab.txt --do_lower_case=False --max_seq_length=128 --max_predictions_per_seq=20 --masked_lm_prob=0.15 --random_seed=12345 --dupe_factor=5
+	#python3 /home/maggie/bert/create_pretraining_data.py --input_file="$file" --output_file="$out$filename".tfrecord --vocab_file=$BERT_BASE_DIR/vocab.txt --do_lower_case=False --max_seq_length=128 --max_predictions_per_seq=20 --masked_lm_prob=0.15 --random_seed=12345 --dupe_factor=5
+	
+	python3 /home/maggie/bert/create_pretraining_data.py --input_file="$file" --output_file="$out$filename".tfrecord --vocab_file=$BERT_BASE_DIR/vocab.txt --do_lower_case=False --max_seq_length=512 --max_predictions_per_seq=77 --masked_lm_prob=0.15 --random_seed=12345 --dupe_factor=5
 done
