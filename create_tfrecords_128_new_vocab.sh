@@ -11,9 +11,9 @@
 
 csv=/home/maggie/csv_files/
 out=/home/maggie/tfrecords/
-vocab=/home/maggie/vocab_bert.txt
+vocab=/home/maggie/bert/de_vocab_bert.txt
 
-echo $BERT_BASE_DIR
+#echo $BERT_BASE_DIR
 echo $csv
 echo $out
 echo $vocab
