@@ -2,18 +2,10 @@
 
 [ -d /home/maggie/tfrecords ] || mkdir /home/maggie/tfrecords
 
-#BERT_BASE_DIR=/media/maggie/Maggie/BERT/Bert-Checkpoints/Bert-Base-Multilingual-Cased/multi_cased_L-12_H-768_A-12/multi_cased_L-12_H-768_A-12
-#csv="/media/maggie/New Volume/csv_files/"
-#out="/home/maggie/tfrecords/"
-
-#BERT_BASE_DIR=gs://deep_speech_bucket/multi_cased_L-12_H-768_A-12
-
-
 csv=/home/maggie/csv_files/
 out=/home/maggie/tfrecords/
-vocab=/home/maggie/bert/de_vocab_bert.txt
+vocab=/home/maggie/bert/vocab/vocab_bert1000.txt
 
-#echo $BERT_BASE_DIR
 echo $csv
 echo $out
 echo $vocab
