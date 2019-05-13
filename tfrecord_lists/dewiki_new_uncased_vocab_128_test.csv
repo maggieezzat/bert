@@ -1,0 +1,3 @@
+gs://deep_speech_bucket/dewiki_my_uncased_1000vocab_128/CA.tfrecord
+gs://deep_speech_bucket/dewiki_my_uncased_1000vocab_128/CB.tfrecord
+gs://deep_speech_bucket/dewiki_my_uncased_1000vocab_128/CC.tfrecord
