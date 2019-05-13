@@ -1,0 +1,4 @@
+gs://deep_speech_bucket/dewiki_my_cased_1000vocab_512/CA.tfrecord
+gs://deep_speech_bucket/dewiki_my_cased_1000vocab_512/CB.tfrecord
+gs://deep_speech_bucket/dewiki_my_cased_1000vocab_512/CC.tfrecord
+
