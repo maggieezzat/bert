@@ -11,7 +11,6 @@ echo $out
 echo $vocab
 
 for file in "$csv"*.csv; do
-	
 	filename=$(basename -- "$file")
 	extension="${filename##*.}"
 	filename="${filename%.*}"

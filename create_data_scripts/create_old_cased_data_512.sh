@@ -2,7 +2,6 @@
 
 [ -d /home/maggie/tfrecords ] || mkdir /home/maggie/tfrecords
 
-#BERT_BASE_DIR=/media/maggie/Maggie/BERT/Bert-Checkpoints/Bert-Base-Multilingual-Cased/multi_cased_L-12_H-768_A-12/multi_cased_L-12_H-768_A-12
 BERT_BASE_DIR=gs://deep_speech_bucket/multi_cased_L-12_H-768_A-12
 csv=/home/maggie/csv_files/
 out=/home/maggie/tfrecords/

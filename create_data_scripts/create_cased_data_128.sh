@@ -4,7 +4,7 @@
 
 csv=/home/maggie/csv_files/
 out=/home/maggie/tfrecords/
-vocab=/home/maggie/bert/vocab/vocab_bert1000.txt
+vocab=/home/maggie/bert/vocab/vocab_cased_1000.txt
 
 echo $csv
 echo $out
