@@ -8,7 +8,7 @@ python3 /home/maggie/bert/run_pretraining.py \
 --do_train=True \
 --do_eval=True \
 --bert_config_file=/home/maggie/bert/config/bert_config_cased.json \
---train_batch_size=912 \
+--train_batch_size=896 \
 --max_seq_length=128 \
 --max_predictions_per_seq=20 \
 --num_train_steps=30000 \
