@@ -3,7 +3,8 @@ BERT_BASE_DIR=gs://deep_speech_bucket/multi_cased_L-12_H-768_A-12
 
 python3 /home/maggie/bert/run_pretraining.py \
 --input_file=/home/maggie/bert/tfrecord_lists/dewiki_old_vocab_128_train.csv \
---output_dir=gs://deep_speech_bucket/bert_checkpoints/original_model/ \
+--output_dir=gs://deep_speech_bucket/bert_checkpoints/original_model_512/ \
+--init_checkpoint=gs://deep_speech_bucket/bert_checkpoints/original_model/ \
 --do_train=True \
 --do_eval=True \
 --bert_config_file=$BERT_BASE_DIR/bert_config.json \
@@ -11,8 +12,8 @@ python3 /home/maggie/bert/run_pretraining.py \
 --train_batch_size=128 \
 --max_seq_length=128 \
 --max_predictions_per_seq=20 \
---num_train_steps=11000 \
---num_warmup_steps=1000 \
+--num_train_steps=44000 \
+--num_warmup_steps=33000 \
 --learning_rate=2e-5 \
 --use_tpu=True \
 --tpu_name=$TPU_NAME \
