@@ -11,8 +11,8 @@ python3 /home/maggie/bert/run_pretraining.py \
 --train_batch_size=896 \
 --max_seq_length=128 \
 --max_predictions_per_seq=20 \
---num_train_steps=30000 \
---num_warmup_steps=10000 \
+--num_train_steps=90000 \
+--num_warmup_steps=9000 \
 --learning_rate=2e-5 \
 --use_tpu=True \
 --tpu_name=$TPU_NAME \
