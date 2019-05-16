@@ -16,8 +16,6 @@ flags = tf.flags
 
 FLAGS = flags.FLAGS
 
-#["Example_ID", "Label", "Label_ID", "Article"]
-
 
 ## Required parameters
 flags.DEFINE_string(
