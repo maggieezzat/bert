@@ -9,4 +9,4 @@ python3 /home/maggie/bert/articles_classifier.py \
 --do_predict=True \
 --use_tpu=True \
 --tpu_name=$TPU_NAME \
---init_checkpoint=gs://deep_speech_bucket/uncased_model
+--init_checkpoint=gs://deep_speech_bucket/my_uncased_model
