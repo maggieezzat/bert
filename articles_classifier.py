@@ -799,10 +799,10 @@ def main(_):
 
         #predicted_label = max(probabilities)
         predicted_label_index = np.argmax(probabilities)
-        output_line = "Example: "+str(i)+ " Predicted Label: " +str(predicted_label_index)+ " "
-        output_line += "\t".join(
-            str(class_probability)
-            for class_probability in probabilities) + "\n"
+        output_line = "Example: "+str(i+1)+ " Predicted Label:   " +str(predicted_label_index)+ "\n"
+        #output_line += "\t".join(
+        #    str(class_probability)
+        #    for class_probability in probabilities) + "\n"
         writer.write(output_line)
         num_written_lines += 1
     assert num_written_lines == num_actual_predict_examples
