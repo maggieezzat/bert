@@ -207,7 +207,7 @@ class MyProcessor(DataProcessor):
   def get_labels(self):
     """See base class."""
     #return ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
-    return ["Web", "Panorama", "International", "Wirtschaft", "Sport", "Inland", "Etat", "Wissenschaft", "Kultur"]
+    return ["Web", "Panorama", "International", "Wirtschaft", "Sport", "Inland", "Etat", "Wissenschaft", "Kultur", "None"]
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
@@ -218,7 +218,7 @@ class MyProcessor(DataProcessor):
       guid = "%s-%s" % (set_type, i)
       article_text = tokenization.convert_to_unicode(line[3])
       if set_type == "test":
-        label = "0"
+        label = "None"
       else:
         label = tokenization.convert_to_unicode(line[1])
       examples.append(
