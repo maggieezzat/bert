@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export BERT_BASE_DIR=gs://deep_speech_bucket/multi_cased_L-12_H-768_A-12
 BERT_BASE_DIR=gs://deep_speech_bucket/multi_cased_L-12_H-768_A-12
 

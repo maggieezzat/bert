@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export vocab=/home/maggie/bert/vocab/vocab_cased_1000.txt
 vocab=/home/maggie/bert/vocab/vocab_cased_1000.txt
 
