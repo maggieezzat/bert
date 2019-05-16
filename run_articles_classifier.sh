@@ -2,7 +2,7 @@ python3 /home/maggie/bert/articles_classifier.py \
 --data_dir=gs://deep_speech_bucket/articles/ \
 --bert_config_file=/home/maggie/bert/config/bert_config_cased.json \
 --vocab_file=/home/maggie/bert/vocab/vocab_cased_1000.txt \
---output_dir=gs://deep_speech_bucket/finetuning_articles/ \
+--output_dir=gs://deep_speech_bucket/finetuning_articles_cased/ \
 --do_lower_case=False \
 --do_train=True \
 --do_eval=True \
