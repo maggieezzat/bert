@@ -4,8 +4,8 @@ python3 /home/maggie/bert/articles_classifier.py \
 --vocab_file=/home/maggie/bert/vocab/vocab_uncased_1000.txt \
 --output_dir=gs://deep_speech_bucket/finetuning_articles/ \
 --do_lower_case=True \
---do_train=True \
---do_eval=True \
+--do_train=False \
+--do_eval=False \
 --do_predict=True \
 --use_tpu=True \
 --tpu_name=$TPU_NAME \

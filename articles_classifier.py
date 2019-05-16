@@ -795,7 +795,11 @@ def main(_):
         probabilities = prediction["probabilities"]
         if i >= num_actual_predict_examples:
           break
-        output_line = "\t".join(
+
+        predicted_label = max(probabilities)
+        predicted_label_index = probabilities.index(predicted_label)
+        output_line = "Example: "+i+ " Predicted Label: " +predicted_label_index+ " "
+        output_line += "\t".join(
             str(class_probability)
             for class_probability in probabilities) + "\n"
         writer.write(output_line)
