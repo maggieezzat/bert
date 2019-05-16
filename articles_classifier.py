@@ -796,8 +796,8 @@ def main(_):
         if i >= num_actual_predict_examples:
           break
 
-        predicted_label = max(probabilities)
-        predicted_label_index = probabilities.index(predicted_label)
+        #predicted_label = max(probabilities)
+        predicted_label_index = np.argmax(probabilities)
         output_line = "Example: "+i+ " Predicted Label: " +predicted_label_index+ " "
         output_line += "\t".join(
             str(class_probability)
