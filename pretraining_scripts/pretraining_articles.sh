@@ -20,3 +20,4 @@ python3 /home/maggie/bert/run_pretraining.py \
 --tpu_name=$TPU_NAME \
 --tpu_zone=us-central1-f
 --init_checkpoint=gs://deep_speech_bucket/my_uncased_model/
+
