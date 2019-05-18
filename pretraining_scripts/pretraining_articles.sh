@@ -5,7 +5,7 @@ vocab=/home/maggie/bert/vocab/vocab_uncased_1000.txt
 
 
 python3 /home/maggie/bert/run_pretraining.py \
---input_file=gs://deep_speech_bucket/pretraining_articles.tfrecord \
+--input_file=/home/maggie/bert/articles.csv \
 --output_dir=gs://deep_speech_bucket/bert_checkpoints/my_uncased_model_articles/ \
 --do_train=True \
 --do_eval=True \
@@ -20,4 +20,3 @@ python3 /home/maggie/bert/run_pretraining.py \
 --tpu_name=$TPU_NAME \
 --tpu_zone=us-central1-f
 --init_checkpoint=gs://deep_speech_bucket/my_uncased_model/
-
