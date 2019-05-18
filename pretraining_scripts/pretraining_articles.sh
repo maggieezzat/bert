@@ -5,7 +5,7 @@ vocab=/home/maggie/bert/vocab/vocab_uncased_1000.txt
 
 
 python3 /home/maggie/bert/run_pretraining.py \
---input_file=/home/maggie/bert/tfrecord_lists/dewiki_new_uncased_vocab_128_train.csv \
+--input_file=gs://deep_speech_bucket/pretraining_articles.tfrecord \
 --output_dir=gs://deep_speech_bucket/bert_checkpoints/my_uncased_model_articles/ \
 --do_train=True \
 --do_eval=True \
