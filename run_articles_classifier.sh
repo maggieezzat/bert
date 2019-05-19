@@ -50,10 +50,10 @@
 
 
 python3 /home/maggie/bert/articles_classifier.py \
---data_dir=gs://deep_speech_bucket/articles_2/ \
+--data_dir=gs://deep_speech_bucket/articles_3/ \
 --bert_config_file=/home/maggie/bert/config/bert_config_uncased.json \
 --vocab_file=/home/maggie/bert/vocab/vocab_uncased_1000.txt \
---output_dir=gs://deep_speech_bucket/articles_uncased_no_inference/ \
+--output_dir=gs://deep_speech_bucket/articles_uncased_3/ \
 --do_lower_case=False \
 --do_train=True \
 --do_eval=True \
