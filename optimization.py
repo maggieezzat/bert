@@ -52,11 +52,6 @@ def create_optimizer(loss, init_lr, num_train_steps, num_warmup_steps, use_tpu):
     is_warmup = tf.cast(global_steps_int < warmup_steps_int, tf.float32)
     learning_rate = (
         (1.0 - is_warmup) * learning_rate + is_warmup * warmup_learning_rate)
-    
-    print("\n\n\n\n\n\n")
-    print("LEARNING RATE ::::::::: ")
-    print(learning_rate)
-    print("\n\n\n\n\n\n")
 
   # It is recommended that you use this optimizer for fine tuning, since this
   # is how the model was trained (note that the Adam m/v variables are NOT
