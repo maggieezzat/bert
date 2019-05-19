@@ -57,7 +57,7 @@ python3 /home/maggie/bert/articles_classifier.py \
 --do_lower_case=False \
 --do_train=True \
 --do_eval=True \
---do_predict=True \
+--do_predict=False \
 --use_tpu=True \
 --tpu_name=$TPU_NAME \
 --init_checkpoint=gs://deep_speech_bucket/bert_checkpoints/my_uncased_model
